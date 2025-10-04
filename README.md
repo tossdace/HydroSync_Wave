@@ -64,3 +64,58 @@ private fun togglePlayback() {
     }
     isPlaying = !isPlaying
 }
+🛠 Getting Started
+Ride the wave in 5 pro steps:
+Clone the Repo:
+git clone https://github.com/tossdace/HydroSync_Wave.git
+cd HydroSync_Wave
+Open in Android Studio:
+Use Android Studio (2025+).
+Import project—Gradle syncs like a dream.
+Add Permissions (AndroidManifest.xml):
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+<uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+Build & Run:
+Build > Run on Android 13+ device (USB debugging on).
+Test with: https://ia600500.us.archive.org/22/items/duck_and_cover/duck_and_cover.mp4.
+Multi-Headset Setup:
+Pair headsets (Settings > Bluetooth).
+Enable Audio Sharing (Settings > Connected Devices).
+Share QR code, play, and vibe! 🎧
+Troubleshooting:
+🚫 No Video? Check URL (.mp4/.m3u8) or INTERNET perm.
+🚫 No Broadcast? Verify Android 16+, LE Audio headsets.
+🚫 Build Fail? Update Gradle to 8.5+.
+📋 Tech Stack
+Powered by 2025’s freshest tools:
+Component
+Version
+Why It Rocks
+Language
+Kotlin 1.9.0
+Clean, crash-proof code.
+Media Player
+ExoPlayer 1.4.1
+4K streams, buttery smooth.
+UI
+Jetpack AppCompat
+Sleek, Material Design vibes.
+Bluetooth
+Android BT API
+A2DP + Auracast sync.
+Build
+Gradle (Kotlin DSL)
+Fast, dependency magic.
+Target SDK
+36 (Android 16)
+Future-proof for 2025.
+Dependencies (build.gradle.kts):
+dependencies {
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-ui:1.4.1")
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+}
