@@ -55,15 +55,7 @@ Hold onto your headphones—this is where **HydroSync Wave Movies** becomes a **
 - **Compat Check:** Android 13+ (16+ for full Auracast). Headsets like Pixel Buds Pro 2, Sony WF-1000XM6. Older A2DP? Falls back to 1-2 devices.  
 - **Code Magic:** ExoPlayer pumps audio; Android’s system handles the broadcast heavy lifting.  
 
-**Sneak Peek (MainActivity.kt):**  
-```kotlin
-private fun togglePlayback() {
-    if (isPlaying) player.pause() else {
-        player.play()
-        if (audioManager.isBluetoothA2dpOn) Toast.makeText(this, "🌊 Audio Sharing Activated! Syncing to headsets...", Toast.LENGTH_SHORT).show()
-    }
-    isPlaying = !isPlaying
-}
+
 🛠 Getting Started
 Ride the wave in 5 pro steps:
 Clone the Repo:
